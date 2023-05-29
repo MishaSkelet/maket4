@@ -8,10 +8,47 @@
     width: 1px !important;
     overflow: hidden;}
     body {
-        font-family: 'Roboto', sans-serif;;
-        font-style: normal;
+        font-family: 'Roboto', sans-serif;;         font-style: normal;
     }
+    .conteiner {
+        width: 1600px;
+       margin: o auto;
+    }
+    h2,
+    p,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style: none;
+    }
+    .header{
+        width: 1600px;
+    }
+    .header-conteiner {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-left {
+        display: flex; 
+        width: 520px;    
+        justify-content: space-between;
+    }
+    .header-right {
+        width: 307px;
+        display: flex;
+        justify-content: space-between;
+        
+         }
     .logo-link {
+    
         font-family: 'Relaway', sans-serif;; 
         font-weight: 700;
         font-size: 26px;
@@ -20,17 +57,24 @@
         color: #212121;
         text-decoration:none ;
     }
+   
     .Web {
         color: #2196F3;
+        padding-top: 24px;
     }
     .nav-list {
+        display: flex;
+        justify-content: space-between;
+        width: 281px;
         list-style: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
-        
+        color: #212121;
+        align-items: center;
     }
+  
     .nav-list a {
         text-decoration: none;
         color: #212121;
@@ -43,35 +87,50 @@
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em; 
-        list-style-type: none;  
+        list-style-type: none;
     }
-    .contact-list a {
-        text-decoration: none;
-        color: #757575 
-       ;
-    }
-    .contact-list a:hover {
-        color: #2196F3; 
-    }
+   .mail {
+    color: #757575;
+   }
+   .tel {
+    color: #757575;   
+   }
+   .mail:hover {
+    color: #2196F3;
+   }
+   .tel:hover {
+    color: #2196F3;
+   }
+   .contact-list a {
+    color: #757575;
+    text-decoration: none;
+   }
+   .contact-list a:hover {
+    color: #2196F3;
+   }
     .hero {
         background-color: #2F303A;
+        padding: 200px 0;
     }
     .hero-title {
         font-weight: 900;
 font-size: 44px;
 line-height: 60px;
-/* or 136% */
 text-align:Center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
+align-items: center;
+margin-bottom: 30px;
     }
     .hero-btn {
-        width: 152px;
-        height: 30px;
-        background-color: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15 );
-        border-radius:4px ;
+        margin: 0 auto;
+        display: block;
+        width: 216px;
+        height: 50px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15 ); /*тінь за кнопкою*/
+        border-radius:4px ;/*рамка*/
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
@@ -79,13 +138,24 @@ color: #FFFFFF;
         letter-spacing: 0.06em;
         color: #FFFFFF;
     }
+    .features {
+        width: 1200px;
+        margin: 0 auto;
+        
+    }
+    .features-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
     .features-subtitle {
 list-style: none;  
 font-weight: 700;
 font-size: 14px;
-line-height: 16.41px;
+line-height: 1.14px;
 letter-spacing: 0.03em;
-color: #212121;   
+color: #212121;
+ margin: 94px 30px 0px 0px; 
     }
      .features-paragraf {
         list-style-type: none;
@@ -93,38 +163,54 @@ color: #212121;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        color: #757575;  
+        color: #757575;
+        margin: 30px 0px 0px 0px; ;  
             }
-      .img-what {
-        list-style-type: none;
+      .electricity-paragraf{
         font-weight: 700;
         font-size: 36px;
-        line-height: 42.19px;
-        letter-spacing: 0.03em;
+        line-height: 1.71px;
         text-align: center;
+        margin: 118px 0px 50px;
       }   
-      .img-what a {
-        color: #212121;
+      .electricity-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
       }    
-      .img-computer {
+      .electricity-img{
 list-style-type: none;        
 width: 370px;   
 height: 294px;
-top: 1058px;
+margin: 0px 30px 94px 0px;
       }
-      .our-team {
-        list-style-type: none;
+      .perconal {
+      background-color: #F5F4FA;
+      margin: 94px;
+      width: 1600;
+      }
+      .perconal-title {
+      list-style-type: none;
         font-weight: 700;
         font-size: 36px;
         line-height: 42.19px;
-        letter-spacing: 0.03em;
-        text-align: center; 
+        text-align: center;   
+        margin: 0px 0px 50px;
       }
-      .perconal-foto {
-list-style-type: none;        
+      .perconal-cards {
+        margin: 0px 30px;
+        background-color: #FFFFFF;  
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12 ), 0px 1px 1px rgba(0, 0, 0, 0.14 );
+        border-radius: 0px 0px 4px 4px;
+      }
+      .perconal-list {
+        list-style: none;
+        display: flex;
+        justify-content: center; 
+      }
+      .perconal-foto {     
 width: 270px;   
 height: 260px;
-top: 1632px;
       }
       .perconal-name{
         list-style-type: none;
@@ -133,6 +219,7 @@ top: 1632px;
         line-height: 18.75px;
             letter-spacing: 0.03em;
             text-align: center;
+            margin: 30px 0px 10px;
       } 
       .perconal-name a {
       color: #212121;  
@@ -144,11 +231,13 @@ top: 1632px;
         line-height: 18.75px;
             letter-spacing: 0.03em;
             text-align: center;
+            
       }   
-      .perconal-work {
+      .perconal-work a {
         color: #757575;
       }
       .logo-link1 {
+    
         font-family: 'Relaway', sans-serif;; 
         font-weight: 700;
         font-size: 26px;
@@ -157,8 +246,10 @@ top: 1632px;
         color: #FFFFFF;
         text-decoration:none ;
     }
+   
     .Web1 {
         color: #2196F3;
+        padding-top: 24px;
     }
     .contact-list1 {
         font-weight: 400;
@@ -182,6 +273,16 @@ top: 1632px;
         letter-spacing: 0.03em; 
         list-style-type: none; 
         color: #FFFFFF;      
+    }
+    .hero1 {
+        background-color: #2F303A;
+        padding: 84px 0;
+    }
+    .footer-conteiner {
+        width: 1200px;
+        margin: 0 auto;
+       
+        
     }
   
       
