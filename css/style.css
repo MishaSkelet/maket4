@@ -20,6 +20,9 @@
         margin: 0;
         padding: 0;
     }
+    use{
+        display: block;
+    }
     a {
         text-decoration: none;
     }
@@ -42,11 +45,24 @@
         justify-content: space-between;
     }
     .header-right {
-        width: 307px;
+        width: 333px;
         display: flex;
         justify-content: space-between;
-        
+        align-items: center;
+        padding: 0;
          }
+         .icon-contact {
+            fill: #757575;
+            margin-right: 10px;
+        }
+        .tel:hover .icon-contact,
+        .tel:focus .icon-contact {
+        fill: #2196F3;
+        }
+        .mail:hover .icon-contact,
+        .mail:focus .icon-contact {
+        fill: #2196F3;
+        }
     .logo-link {
     
         font-family: 'Relaway', sans-serif;; 
@@ -155,24 +171,38 @@ margin-bottom: 30px;
         list-style: none;
         display: flex;
         justify-content: center;
+        margin: 94px 0px 0px 0px; 
     }
     .features-subtitle {
-list-style: none;  
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14px;
 letter-spacing: 0.03em;
 color: #212121;
- margin: 94px 30px 0px 0px; 
+
     }
      .features-paragraf {
         list-style-type: none;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1.71px;
         letter-spacing: 0.03em;
         color: #757575;
-        margin: 30px 0px 0px 0px; ;  
+        margin: 0px 30px 0px 0px; ;  
+            }
+            .features-list-item:nth-child(-n+3) {
+                margin: 0 30px 0 0;
+            }
+            .features-icon {
+                width: 270px;
+                height: 120px;
+                background-color: #F5F4FA;
+                padding: 25px 0;
+                margin-bottom: 30px;
+            }
+            .icon-features{
+                display: block;
+                margin: 0 auto;
             }
       .electricity-paragraf{
         font-weight: 700;
@@ -201,15 +231,18 @@ margin: 0px 30px 94px 0px;
       list-style-type: none;
         font-weight: 700;
         font-size: 36px;
-        line-height: 42.19px;
+        line-height: 1.19px;
         text-align: center;   
         margin: 0px 0px 50px;
       }
       .perconal-cards {
         margin: 0px 30px;
-        background-color: #FFFFFF;  
+        background: #FFFFFF;  
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12 ), 0px 1px 1px rgba(0, 0, 0, 0.14 );
         border-radius: 0px 0px 4px 4px;
+      }
+      .perconal-cards:nth-child(-n+3) {
+        margin-right: 30px;
       }
       .perconal-list {
         list-style: none;
@@ -219,6 +252,7 @@ margin: 0px 30px 94px 0px;
       .perconal-foto {     
 width: 270px;   
 height: 260px;
+background: #FFFFFF;
       }
       .perconal-name{
         list-style-type: none;
@@ -236,7 +270,7 @@ height: 260px;
         list-style-type: none;
         font-weight: 400;
         font-size: 16px;
-        line-height: 18.75px;
+        line-height: 1.18px;
             letter-spacing: 0.03em;
             text-align: center;
             
@@ -244,6 +278,70 @@ height: 260px;
       .perconal-work a {
         color: #757575;
       }
+      .icon-list {
+        display: flex;
+        justify-content: space-between;
+        width: 206px;
+        margin: 16px auto 30px;
+        padding: 0px;
+    }
+    .perconal-icon{
+        fill: #AFB1B8;
+    }
+    .icon-list-item:hover .perconal-icon{
+        fill: #FFFFFF;
+    }
+    
+    .icon-list-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+    }
+    
+    .icon-list-item:hover, .icon-list-item:focus{
+        border-radius: 50%;
+        background-color: #2196F3;
+    }
+    .conteiner-client {
+            padding: 94px 0;   
+    }
+    .client-title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+    color: #212121;
+    font-size: 36px;
+    }
+.client-list {
+    justify-content: space-between;
+    display: flex;
+}
+.client-list-item {
+    
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    width: 170px;
+    height: 92px;
+    display: flex;
+}
+.client-icon {
+    fill: #AFB1B8;
+    width: 106px;
+    height: 60px;
+}
+.client-list-item:hover .client-icon{
+    fill: #2196F3;
+}
+
+.client-list-item:hover{
+    border-color: #2196F3;
+}
       .logo-link1 {
     
         font-family: 'Relaway', sans-serif;; 
@@ -291,6 +389,46 @@ height: 260px;
         margin: 0 auto;
        
         
+    }
+    .footer-link {
+        padding: 12px 0 0 0;
+    }
+    .footer-title {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #FFF;
+    }
+    .footer-list-link {
+        display: flex;
+    justify-content: space-between;
+    }
+    .footer-list-item {
+    align-items: center;
+    justify-content: center;    
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+    .footer-list-item:nth-child(-n+3){
+        margin-right: 10px;
+    }
+    .footer-icon-link {
+        width: 20px;
+        height: 20px;
+    }
+    .footer-list-item:hover, .footer-list-item:focus{
+        background-color: #2196F3;
+    }
+    .footer-svg {
+        width: 20px;
+        height: 20px;
+        fill: #FFFFFF;
     }
     .visually-hidden {
         position: absolute !important;
