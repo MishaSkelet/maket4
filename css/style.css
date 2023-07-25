@@ -55,14 +55,7 @@
             fill: #757575;
             margin-right: 10px;
         }
-        .tel:hover .icon-contact,
-        .tel:focus .icon-contact {
-        fill: #2196F3;
-        }
-        .mail:hover .icon-contact,
-        .mail:focus .icon-contact {
-        fill: #2196F3;
-        }
+        
     .logo-link {
     
         font-family: 'Relaway', sans-serif;; 
@@ -129,6 +122,10 @@
     
     .contact-link:hover,.contact-link:focus {
         color: #2196F3;
+    }
+    .icon-contact {
+        fill: #757575;
+        margin-right: 10px;
     }
     .hero {
         background-color: #2F303A;
