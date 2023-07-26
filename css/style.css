@@ -295,7 +295,8 @@ background: #FFFFFF;
     .perconal-icon{
         fill: #AFB1B8;
     }
-    .icon-list-item:hover .perconal-icon{
+    
+    .icon-list-item:hover .people-icons{
         fill: #FFFFFF;
     }
     
