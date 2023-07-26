@@ -433,7 +433,7 @@ background: #FFFFFF;
             color: #FFF;
     }
     
-    .footer-list-links{
+    .footer-list-link{
         display: flex;
         justify-content: space-between;
     }
@@ -452,7 +452,7 @@ background: #FFFFFF;
         margin-right: 10px;
     }
     
-    .link-footer-icon{
+    .footer-icon-link{
         width: 20px;
         height: 20px;
     }
