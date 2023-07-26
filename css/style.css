@@ -127,6 +127,10 @@
         fill: #757575;
         margin-right: 10px;
     }
+    .contact-link:hover .icon-contact,
+.contact-link:focus .icon-contact {
+    fill: #2196F3;
+}
     .hero {
         background-color: #2F303A;
         padding: 200px 0;
