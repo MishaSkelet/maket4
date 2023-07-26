@@ -372,54 +372,71 @@ background: #FFFFFF;
                 border-color: #2196F3;
             }
             
-      .logo-link1 {
-    
-        font-family: 'Relaway', sans-serif;; 
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-        text-decoration:none ;
-    }
-   
-    .Web1 {
-        color: #2196F3;
-        padding-top: 24px;
-    }
-    .contact-list1 {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em; 
-        list-style-type: none;  
-    }
-    .contact-list1 a {
-        text-decoration: none;
-        color: #757575 
-       ;
-    }
-    .contact-list1 a:hover {
-        color: #2196F3; 
-    }
-    .address {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.03em; 
-        list-style-type: none; 
-        color: #FFFFFF;      
-    }
-    .hero1 {
-        background-color: #2F303A;
-        padding: 84px 0;
-    }
-    .footer-conteiner {
-        width: 1200px;
-        margin: 0 auto;
+            .footer {
+                padding: 60px 0;
+                background-color: #2F303A;
+                height: 252px;
+            }
+            
+            .footer-content{
+                display: flex;
+            }
+            
+            .footer-contact{
+                margin-right: 70px;
+                padding-bottom: 60px;
+                
+            }
+
+            
+            .footer-contact-list{
+                list-style: none;
+                padding: 0;
+  
+                }
+            
+            .footer-contact-list a{
+                text-decoration: none;  
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.03em;
+                color: rgba(255, 255, 255, 0.6);
+            }
+            
+            .footer-parag{
+                width: 231px;
+                height: 21px;
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.03em; 
+                color: #FFFFFF;
+            }
+            
+            .footer-cont{
+                width: 231px;
+                height: 21px;
+            }
+            
+            .footer-cont:first-child{
+                margin: 9px 0px;
+    }        
+            
+    .footer-logo-link {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 1.19;
+                letter-spacing: 0.03em;
+                color: #ffffff;
+                text-decoration: none;
+            }
+            
        
         
-    }
+    
     .footer-link {
         padding: 12px 0 0 0;
     }
