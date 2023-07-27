@@ -228,24 +228,55 @@ color: #212121;
                 display: block;
                 margin: 0 auto;
             }
-      .electricity-paragraf{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.71px;
-        text-align: center;
-        margin: 118px 0px 50px;
-      }   
-      .electricity-list {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-      }    
-      .electricity-img{
-list-style-type: none;        
-width: 370px;   
-height: 294px;
-margin: 0px 30px 94px 0px;
-      }
+            .electricity{
+                margin: 94px auto;
+            }
+            
+            .electricity-paragraf{
+                text-align: center;
+                margin: 0px 0px 50px;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.16;
+            
+            }
+            
+            .electricity-list {
+                display: flex;
+                margin: 0 auto;
+            }
+            
+            .thumb {
+                width: 370px;
+                height: 294px;
+                position: relative;
+            }
+            
+            .electricity-img{
+                object-position: 100%;
+            }
+            
+            .electricity-list-item:nth-child(-n+2){
+                margin-right: 30px;
+            
+            }
+            
+            .label {
+                position: absolute;
+                width: 370px;
+                height: 70px;
+                bottom: 0;
+                text-align: center;
+                padding-top: 27px;
+                background: rgba(47, 48, 58, 0.80);
+                color: #FFF;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0.42px;
+                text-transform: uppercase;
+
+                  }      
       .perconal {
       background-color: #F5F4FA;
       margin: 94px;
@@ -823,61 +854,53 @@ background: #FFFFFF;
         border-radius: 4px;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) 0px 1px 2px rgba(0, 0, 0, 0.8) 0px 2px 2px rgba(0, 0, 0, 0.12);
       }
-     .cards {
-      width: 1200px;
-      display: flex;
-      margin: 0 auto;
-      justify-content: space-between;
-      flex-wrap: wrap;
-        }
-        
-        .card {
-          margin-bottom: 30px;
-        box-sizing: border-box;
-        width: 370;
-        height: 388.23px;
+      .thumb1{
+        width: 370px;
+        height: 294px;
+    }
+    
+    .main-title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: #212121;
+        margin: 20px 24px 0;
+    }
+    
+    .main-paragraf{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        width: 322px;
+        height: 30px;
+        color: #757575;
+        margin: 0px 24px 20px;
+    }
+    
+    .main-card{
+        width: 1170px;
+        height: 1290px;
+        margin: 0 auto ;
+        padding: 0px 170px;
+    }
+    
+    .card-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between ;
         background: #FFFFFF;
+        list-style: none;
+    }
+    
+    .card-list-item{
         border: 1px solid #EEEEEE;
-        margin: 15px 14.5px;
-        }
-        .cards-list {
-          list-style: none;
-          display: flex;
-          justify-content: center; 
-        }
-        .foto {     
-    width: 370px;   
-    height: 282.52px;
-        }
-        .irna{
-          list-style-type: none;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 18.75px;
-              letter-spacing: 0.03em;
-              text-align: center;
-              
-        } 
-        .irna a {
-        color: #212121;  
-        }  
-        .work{
-          list-style-type: none;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 18.75px;
-              letter-spacing: 0.03em;
-              text-align: center;
-              
-        }  
-        .work a {
-          color: #757575;
-        } 
-        .bra {
-          width: 322px;
-          height: 67.27px;
-    margin: 24px 19.22px;
-        }
+    }
+    
+    .card-list-item:nth-child(-n+6){
+        margin-bottom: 30px;
+    }
         .logo-link1 {
         
           font-family: 'Relaway', sans-serif;; 
