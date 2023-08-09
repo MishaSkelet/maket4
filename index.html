@@ -45,7 +45,50 @@
     <!--blok hero-->
     <section class="hero">
         <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <form class="modal">
+            <button class="modal-bth-close" data-modal-close>
+              <svg class="close-svg">
+                <use href="./icons/symbol-defs.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <ul class="modal-list">
+              <li class="modal-list-item">
+                <label class="modal-label"> Ім'я
+                  <input type="text" class="modal-input" required>
+                  <svg class="modal-svg">
+                    <use href="./icons/symbol-defs.svg#icon-person-black"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="modal-list-item">
+                <label class="modal-label"> Телефон
+                  <input type="tel" class="modal-input" required>
+                  <svg class="modal-svg">
+                    <use href="./icons/symbol-defs.svg#icon-phone-black"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="modal-list-item">
+                <label class="modal-label"> Пошта
+                  <input type="email" class="modal-input" required>
+                  <svg class="modal-svg">
+                    <use href="./icons/symbol-defs.svg#icon-email-black"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="modal-list-item">
+                <label class="modal-label">Коментар
+                  <textarea class="modal-textarea" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                </label>
+              </li>
+            </ul>
+            <p class="modal-text"><input class="modal-checkbox" type="checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="modal-link"> Умови договору</a></p>
+            <button type="submit" class="modal-bth-submit">Відправити</button>
+          </form>
+        </div> 
     </section>
     <!--secyion perevagi-->
     
