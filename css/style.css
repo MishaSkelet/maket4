@@ -131,6 +131,7 @@
     
     .nav-list-link:hover{
         color: #2196F3;
+    transition: 0.2s ease;
     }
     .contact-link {
         text-decoration: none;
@@ -1124,7 +1125,31 @@ background: #FFFFFF;
          
           
       }  
-      
+      .box-text{
+        color: #FFF;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0.54px;
+            margin: 0;
+    }
+    
+    .overlay{
+        padding: 63px 24px;
+        background: rgba(33, 150, 243, 0.90);
+        transform: translatey(-101%);
+        position: absolute;
+        top: 0;
+        transition: transform 1s ease;
+        width: 322px;
+    
+    }
+    
+    .main-list-item:hover .overlay{
+        transform: translatey(0);
+    }
       .modal {
         padding: 40px;
         width: 528px;
