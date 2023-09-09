@@ -72,6 +72,7 @@
         
         .contact-link:hover,.contact-link:focus {
             color: #2196F3;
+            transition: 0.2s ease;
         }
     .logo-link {
     
@@ -131,7 +132,7 @@
     
     .nav-list-link:hover{
         color: #2196F3;
-    transition: 0.2s ease;
+        transition: 0.2s ease;
     }
     .contact-link {
         text-decoration: none;
@@ -535,12 +536,17 @@ background: #FFFFFF;
     .icon-list-item:hover, .icon-list-item:focus{
         border-radius: 50%;
         background-color: #2196F3;
+        transition: background-color 0.2s ease-in;
+        box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
+        transition: box-shadow 0.2s ease-in;
+        
     }
+    
     .conteiner-client {
             padding: 94px 0;   
             }
             
-            .client-title{
+            .clients-title{
                 color: #212121;
                 text-align: center;
                 font-size: 36px;
@@ -550,12 +556,12 @@ background: #FFFFFF;
                 margin-bottom: 50px;
             }
             
-            .client-list{
+            .clients-list{
                 display: flex;
                 justify-content: space-between;
             }
             
-            .client-list-item{
+            .clients-list-item{
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -565,19 +571,24 @@ background: #FFFFFF;
                 border: 1px solid #AFB1B8;
             }
             
-            .client-icon{
+            .clients-icon{
                 fill: #AFB1B8;
                 width: 106px;
                 height: 60px;
             }
             
-            .client-list-item:hover .client-icon{
+            .clients-list-item:hover .clients-icon{
                 fill: #2196F3;
+                transition: fill 0.3s ease-in;
             }
             
-            .client-list-item:hover{
+            .clients-list-item:hover{
                 border-color: #2196F3;
+                transition: border-color 0.3s ease-in;
+                box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
             }
+            
+            
             
             .footer {
                 padding: 60px 0;
@@ -647,17 +658,17 @@ background: #FFFFFF;
     .footer-link {
         padding: 12px 0 0 0;
     }
-    .footer-title {
+    .footer-title{
+        margin-bottom: 20px;
+        color: #FFF;
             font-size: 14px;
             font-style: normal;
             font-weight: 700;
             letter-spacing: 0.42px;
             text-transform: uppercase;
-            margin-bottom: 20px;
-            color: #FFF;
     }
     
-    .footer-list-link{
+    .footer-list-links{
         display: flex;
         justify-content: space-between;
     }
@@ -676,13 +687,14 @@ background: #FFFFFF;
         margin-right: 10px;
     }
     
-    .footer-icon-link{
+    .link-footer-icon{
         width: 20px;
         height: 20px;
     }
     
     .footer-list-item:hover, .footer-list-item:focus{
         background-color: #2196F3;
+        transition: 0.3s ease-in;
     }
     
     .footer-svg{
