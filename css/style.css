@@ -179,19 +179,37 @@ align-items: center;
 margin-bottom: 30px;
     }
     .hero-btn {
-        margin: 0 auto;
+        margin: 0 auto;    
         display: block;
         width: 216px;
         height: 50px;
         background: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15 ); /*тінь за кнопкою*/
-        border-radius:4px ;/*рамка*/
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);/*тінь за кнопкою*/
+        border-radius: 4px;/*рамка*/
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
         text-align: center;
         letter-spacing: 0.06em;
         color: #FFFFFF;
+        cursor: pointer;
+        animation: bii 1s ease-in 500ms infinite alternate;
+        
+    }
+    
+    @keyframes bii {
+        0% {
+            box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+    
+        }
+    
+        100% {
+        box-shadow: 1px 3px 18px 19px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 1px 3px 18px 19px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 1px 3px 18px 19px rgba(0, 0, 0, 0.75);
+        }
     }
     .backdrop {
         position: fixed;
@@ -452,8 +470,23 @@ color: #212121;
                 font-weight: 700;
                 letter-spacing: 0.42px;
                 text-transform: uppercase;
+                animation: label 1s ease-in 500ms infinite alternate;
+            }
 
-                  }      
+            @keyframes label{
+                0%{
+                    box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+                        -webkit-box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+                        -moz-box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+            
+                }
+            
+                100%{
+                    box-shadow: 1px 3px 37px 16px rgba(0, 0, 0, 0.75);
+                        -webkit-box-shadow: 1px 3px 37px 16px rgba(0, 0, 0, 0.75);
+                        -moz-box-shadow: 1px 3px 37px 16px rgba(0, 0, 0, 0.75);
+                }
+            } 
       .perconal {
       background-color: #F5F4FA;
       margin: 94px;
@@ -701,6 +734,60 @@ background: #FFFFFF;
         width: 20px;
         height: 20px;
         fill: #FFFFFF;
+    }
+    .subscribe-bth{
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+        padding: 0 28px 0 28px;
+        animation: bth 1s ease-in 500ms infinite alternate;
+    }
+    
+    @keyframes btn {
+        0% {
+            box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 1px 3px 18px 0px rgba(0, 0, 0, 0.75);
+    
+        }
+    
+        100% {
+            box-shadow: 1px 3px 18px 19px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 1px 3px 18px 19px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 1px 3px 18px 19px rgba(0, 0, 0, 0.75);
+        }
+    }
+    
+    .footer-form{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .subscribe-svg{
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .subscribe-list{
+        display: flex; 
+    }
+    
+    .subscribe{
+        padding-top: 12px;
+        width: 570px;
+        margin-left: 93px;
     }
     .visually-hidden {
         position: absolute !important;
